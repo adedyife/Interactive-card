@@ -162,6 +162,10 @@ flex-direction: column ;
     
 }
 
+.cvc-container{
+    margin-right: 2em;
+}
+
 .cvc input{
     width: 90%;
 }
@@ -256,9 +260,7 @@ button{
             height: 13em;
         }
 
-        .cvc-no{
-            margin-right: 5em;
-        }
+
 
         .details{
             height: 100vh;
