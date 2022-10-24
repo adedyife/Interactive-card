@@ -71,6 +71,29 @@ flex-direction: column ;
  
 }
 
+.circles{
+    
+    height: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+    gap: 7px;
+}
+
+.circle-b{
+    width: 2em;
+    height: 2em;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.circle-s{
+    width: 1em;
+    height: 1em;
+    border: solid 1px aliceblue;
+    border-radius: 1em;
+}
+
 
 
 .card-mid{
