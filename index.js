@@ -12,7 +12,10 @@ const errornumber = document.querySelector(".err-number")
 const errordate = document.querySelector(".err-date")
 const errorcvc = document.querySelector(".err-cvc")
 const confirmel = document.querySelector(".confirm")
-
+const deet = document.querySelector(".details")
+const thankyou = document.querySelector(".feedback")
+const restart = document.querySelector(".continue-btn")
+let filled = false
 
 nameel.addEventListener ('keyup', () => { fillname.textContent = nameel.value
 }
@@ -46,40 +49,71 @@ confirmel.addEventListener('click', ()=> {
 if (nameel.value === ""){errorname.textContent = "Can't be empty"
 nameel.classList.remove('twitch')
 nameel.classList.add('twitch')
+filled = false
 }else {
     errorname.textContent ="" 
+    filled = true
 }
 
 if (numberel.value === ""){errornumber.textContent = "Can't be empty"
 numberel.classList.remove('twitch')
 numberel.classList.add('twitch')
+filled = false
 }else {
     errornumber.textContent ="" 
+    filled = true
 }
 
 if (monthel.value === "" || yearel.value === ""){errordate.textContent = "Can't be empty"
 monthel.classList.remove('twitch')
 monthel.classList.add('twitch')
 yearel.classList.add('twitch')
+filled = false
 }else {
     errordate.textContent ="" 
+    filled = true
 }
 
 if (cvcel.value === ""){errorcvc.textContent = "Can't be empty"
 cvcel.classList.remove('twitch')
 cvcel.classList.add('twitch')
+filled = false
 
 }else {
     errordate.textContent ="" 
+    filled = true
+}
+
+if (filled === true){
+deet.classList.add("hide")
+thankyou.classList.add("show")
+console.log(feedback)
+} else{
+
 }
 
 
-
-
-
-
-
 } )
+
+
+restart.addEventListener(
+    'click', () => {
+        fillname.textContent= "Jane Appleseed"
+        fillnumber.textContent = "0000 0000 0000 0000"
+        filldate.textContent= "00/00"
+        fillcvc.textContent="200"
+        nameel.value = ""
+        numberel.value = ""
+        monthel.value= ""
+        yearel.value = ""
+        cvcel.value = ""
+        
+deet.classList.remove("hide")
+thankyou.classList.remove("show")
+    }
+)
+
+
 console.log(confirmel)
 
 function isNumber(evt) {
