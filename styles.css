@@ -178,7 +178,7 @@ flex-direction: column ;
     transition: all 300ms linear;
 }
 
-.button{
+button{
     cursor:pointer;
      }
      
