@@ -141,6 +141,7 @@ flex-direction: column ;
     color: var(--Very-dark-violet);
     font-weight: bold;
     font-family: 'Space Grotesk', sans-serif;
+ margin-bottom: 1em;
 }
 
 .info-box{
