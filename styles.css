@@ -200,7 +200,7 @@ input{
     border: solid 1px var(--Light-grayish-violet);
     border-radius: 5px;
      font-family: 'Space Grotesk', sans-serif;
-     color: var(--Light-grayish-violet);
+    
 }
 
 
@@ -238,11 +238,59 @@ button{
     animation: vibrate 0.3s 1 linear;
 }
 
+/* ======================Feedback=========================== */
+
 .feedback{
+   
+    width: 100%;
+    height: 80vh;
     display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10em;
+    gap:2em
 }
 
+.feedback h2{
+    color: var(--Very-dark-violet);
+    font-family: 'Space Grotesk', sans-serif;
+}
 
+.feedback span{
+    font-family: 'Space Grotesk', sans-serif;
+}
+.feedback img{
+    width: 4em;
+    height: 4em;
+}
+
+.continue-btn{
+    
+    background-color: var(--Very-dark-violet);
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: var(--Light-grayish-violet);
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 0.5em ;
+    transition: all 300ms linear;
+}
+
+  .continue-btn:hover{
+            background-color: white;
+            color: var(--Very-dark-violet);
+        
+    }
+
+    .hide{
+        display: none;
+    }
+    .show{
+        display: flex;
+    }
+
+}
+
+/* ======================Feedback=========================== */
 
 @keyframes vibrate {
     10%{ transform: translateX(5%)}
@@ -252,9 +300,10 @@ button{
 }
 
 
- }
+ 
 
  @media( min-width : 950px) {
+
     .card{
         display: flex;
         flex-direction: row;
@@ -320,6 +369,21 @@ button{
             width: 100%;
         }
         
+
+        .feedback{
+            display: none;
+            padding: 0%;
+            height: 100vh;
+            justify-content: center;
+        }
+
+        .hide{
+            display: none;
+        }
+        .show{
+            display: flex;
+        }
+    
        
  }
 
@@ -354,5 +418,13 @@ button{
 .feedback img{
     width: 4em;
 }
+
+  .hide{
+        display: none;
+    }
+    .show{
+        display: flex;
+    }
+
 
  }
