@@ -191,10 +191,12 @@ flex-direction: column ;
 .twitch{
     animation: vibrate 0.3s 1 linear;
 }
-     
-     .feedback{
-         display:none;
-     }
+
+.feedback{
+    display: none;
+}
+
+
 
 @keyframes vibrate {
     10%{ transform: translateX(5%)}
@@ -229,13 +231,13 @@ flex-direction: column ;
         .card-back{
             width: 22em;
             height: 13em;
-            margin-top:30em;
-            margin-left: 20em;
+            margin-top:20em;
+            margin-left: 18em;
         }
 
         .card-front{
-            margin-top: 15em;
-            margin-left: 18em;
+            margin-top: 6em;
+            margin-left: 15em;
             width: 22em;
             height: 13em;
         }
@@ -283,13 +285,13 @@ flex-direction: column ;
     .card-back{
         width: 25em;
         height: 15em;
-        margin-top:33em;
-        margin-left: 45em;
+        margin-top:23em;
+        margin-left: 30em;
     }
 
     .card-front{
-        margin-top: 15em;
-        margin-left: 40em;
+        margin-top: 6em;
+        margin-left: 25em;
         width: 25em;
         height: 15em;
     }
@@ -300,7 +302,7 @@ flex-direction: column ;
     height: 100vh;
     position: absolute;
     background-color: aqua;
-   display:none;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
