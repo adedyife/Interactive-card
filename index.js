@@ -14,12 +14,34 @@ const errorcvc = document.querySelector(".err-cvc")
 const confirmel = document.querySelector(".confirm")
 
 
+nameel.addEventListener ('keyup', () => { fillname.textContent = nameel.value
+}
+)
+
+
+numberel.addEventListener ('keyup', () => { fillnumber.textContent = numberel.value
+}
+)
+
+monthel.addEventListener ('keyup', () => { filldate.textContent = monthel.value + "/"
+}
+)
+
+yearel.addEventListener ('keyup', () => { filldate.textContent = monthel.value + "/" + yearel.value
+}
+)
+
+cvcel.addEventListener ('keyup', () => { fillcvc.textContent = cvcel.value
+}
+)
+
+
+
+
+
+
 
 confirmel.addEventListener('click', ()=> { 
-fillname.textContent = nameel.value
-fillnumber.textContent = numberel.value
-filldate.textContent= monthel.value + "/"+ yearel.value
-fillcvc.textContent = cvcel.value
 
 if (nameel.value === ""){errorname.textContent = "Can't be empty"
 nameel.classList.remove('twitch')
